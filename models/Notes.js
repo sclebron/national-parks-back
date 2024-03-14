@@ -13,6 +13,12 @@ const notesSchema = new Schema({
         unique: false,
         trim: true,
     },
+    images: {
+        type: String,
+        required: false,
+        unique: false,
+        trim: true,
+    }
 })
 
 const Notes = model("Notes", notesSchema);
